@@ -1,0 +1,39 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/common/head %>
+</head>
+
+<body>
+
+<!--nav bar-->
+<% include partials/common/navigation %>
+<!--/.nav bar-->
+
+<!--main container-->
+<div class="container-fluid">
+    <!--main slider-->
+    <% include partials/sections/main-slider %>
+    <!--/.main slider-->
+
+    <!--our services-->
+    <% include partials/sections/our-services %>
+    <!--/.our services-->
+
+    <!--portfolio-->
+    <% include partials/sections/portfolio %>
+    <!--/.portfolio-->
+
+    <!--get a quote-->
+    <% include partials/sections/get-a-quote %>
+    <!--/.get a quote-->
+
+    <!--footer-->
+    <% include partials/common/footer %>
+    <!--/.footer-->
+</div>
+<!--/.main container-->
+<% include partials/common/common-javascript %>
+</body>
+</html>

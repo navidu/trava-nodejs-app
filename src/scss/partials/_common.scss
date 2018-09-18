@@ -1,0 +1,36 @@
+h2, .h2 {
+  font-size: 30px;
+}
+
+h5, .h5 {
+   font-size: 18px;
+ }
+
+.btn-line-def{
+  padding: 3px 6px;
+  border-radius: 5px;
+  background: $default-line-btn-bg;
+  color: $default-line-btn-text;
+  border: 1px solid $default-line-btn-line;
+  font-family: $secondary-font-regular;
+  font-size: 12px;
+  cursor: pointer;
+  &:hover, &:active, &.active{
+    border-color: lighten($default-line-btn-line, 50);
+    color: lighten($default-line-btn-text, 50);
+  }
+}
+
+.btn-light-def{
+  padding: 13px 43px;
+  border-radius: 5px;
+  background: $default-light-btn-bg;
+  color: $default-light-btn-text;
+  border: 1px solid $default-light-btn-bg;
+  font-family: $secondary-font-regular;
+  font-size: 18px;
+  cursor: pointer;
+  &:hover, &:active, &.active{
+    background: lighten($default-light-btn-bg, 50);
+  }
+}

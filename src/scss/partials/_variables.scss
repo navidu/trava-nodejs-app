@@ -1,0 +1,80 @@
+//colors
+$white: #ffffff;
+$primary-white: #f2f2f2;
+$primary-bg-gray: #2d303a;
+$primary-text-gray: #666d89;
+$secondary-text-gray: #767e9e;
+$primary-red: #f06c64;
+$secondary-red: #f0d8d9;
+$sub-red-bg: #d6564f;
+$sub-red-text: #f48c8f;
+
+//fonts
+$primary-font: 'MyriadPro-Regular', sans-serif;
+$secondary-font-light: 'Lato-Light', sans-serif;
+$secondary-font-regular: 'Lato-Regular', sans-serif;
+$secondary-font-bold: 'Lato-Bold', sans-serif;
+$secondary-font-black: 'Lato-Black', sans-serif;
+
+$primary-font-url: url('../fonts/myriadpro/MyriadPro-Regular.otf') format("opentype");
+$secondary-font-light-url: url('../fonts/lato/Lato-Light.ttf') format('truetype');
+$secondary-font-regular-url: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+
+//slider images
+$slider-1: url("../img/slider/slider-1.png");
+
+//our-services icons
+$icons: (
+        buble: url("../img/icons/buble.svg"),
+        bulb: url("../img/icons/bulb.svg"),
+        design: url("../img/icons/design.svg"),
+        heart: url("../img/icons/heart.svg"),
+        responsive: url("../img/icons/responsive.svg"),
+        star: url("../img/icons/star.svg")
+);
+
+//for media screens break points
+$break-xs: 320px;
+$break-sm: 480px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+//=========================level 2=========================
+//colors
+$default-line-btn-line: $primary-text-gray;
+$default-line-btn-text: $secondary-text-gray;
+$default-line-btn-bg: transparentize($primary-text-gray, 0.9);
+
+$default-light-btn-bg: $secondary-red;
+$default-light-btn-text: $sub-red-bg;
+
+$nav-bg: $primary-bg-gray;
+$nav-text: $white;
+$nav-sup: $primary-red;
+$nav-active: $primary-red;
+
+$slider-bg: $primary-red;
+
+$our-service-bg: $primary-white;
+$our-service-title: $primary-text-gray;
+$our-service-text: $secondary-text-gray;
+$our-service-icon-border: $primary-text-gray;
+
+$portfolio-bg: $primary-bg-gray;
+$portfolio-title: $primary-text-gray;
+$portfolio-text: $secondary-text-gray;
+
+$get-quote-bg: $primary-red;
+$get-quote-title: $secondary-red;
+$get-quote-text: $secondary-red;
+$get-quote-input-bg: $sub-red-bg;
+$get-quote-input-text: $sub-red-text;
+
+$footer-bg: $primary-bg-gray;
+$footer-text: $primary-text-gray;
+
+//slider-images
+$main-slider-1: $slider-1;
+$main-slider-2: $slider-1;
+$main-slider-3: $slider-1;
+$main-slider-4: $slider-1;

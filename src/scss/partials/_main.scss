@@ -1,0 +1,252 @@
+/*------------------------------Nav START------------------------------*/
+.header {
+  background: $nav-bg;
+  .navbar-brand {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: $nav-text;
+    font-family: $primary-font;
+    &:hover {
+      color: $nav-active;
+    }
+    sup {
+      color: $nav-sup;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      position: relative;
+      .nav-link {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $nav-text;
+        font-family: $secondary-font-bold;
+        &:hover {
+          color: $nav-active;
+        }
+      }
+      margin: auto 19px auto 19px;
+      &:last-child {
+        margin-right: inherit;
+      }
+      &:first-child {
+        &:after {
+          content: '';
+          display: none;
+          @include respond-to(md-screen) {
+            content: '';
+            display: block;
+          }
+        }
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        background-color: lighten($nav-bg, 13);
+        position: absolute;
+        left: -19px;
+        top: calc(50% - 2px);
+      }
+    }
+    .active {
+      > .nav-link {
+        color: $nav-active;
+      }
+    }
+  }
+  border-bottom: 6px solid lighten($nav-bg, 4);
+}
+
+/*------------------------------Nav END------------------------------*/
+
+/*------------------------------Slider START------------------------------*/
+.main-slider {
+  width: 100%;
+  .carousel-inner {
+    .slider {
+      background: $slider-bg;
+      border-bottom: 6px solid lighten($slider-bg, 4);
+      height: calc(100vh - 69px);
+      &-1 {
+        @include bg-img($main-slider-1, inherit);
+      }
+      &-2 {
+        @include bg-img($main-slider-2, inherit);
+      }
+      &-3 {
+        @include bg-img($main-slider-3, inherit);
+      }
+      &-4 {
+        @include bg-img($main-slider-4, inherit);
+      }
+
+      &-1, &-2, &-3, &-4{
+        height: 100%;
+        @include respond-to(lg-screen){
+          background-size: 80%;
+        }
+      }
+    }
+  }
+}
+
+/*------------------------------Slider END------------------------------*/
+
+/*------------------------------Common Section START------------------------------*/
+.section{
+  padding: 65px 15px;
+  font-family: $secondary-font-light;
+  font-size: 18px;
+  h2, h5 {
+    font-family: $secondary-font-black;
+  }
+}
+/*------------------------------Common Section END------------------------------*/
+
+/*------------------------------Our Services START------------------------------*/
+.our-services {
+  h2, h5 {
+    color: $our-service-title;
+  }
+  background: $our-service-bg;
+  color: $our-service-text;
+  padding: 65px 15px 45px;
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 20px;
+    .item-icon {
+      @include circle(60px, 60px, 50%, 1px, $our-service-icon-border);
+      margin-right: 20px;
+    }
+    .item-details {
+      justify-content: flex-end;
+      width: calc(100% - 80px);
+      font-size: 12px;
+      font-family: $secondary-font-regular;
+      line-height: 22px;
+    }
+    @each $name, $icon in $icons {
+      .item-icon-#{$name}{
+        @include bg-img($icon, 50%);
+      }
+    }
+  }
+  border-bottom: 6px solid lighten($our-service-bg, 4);
+}
+
+/*------------------------------Our Services END------------------------------*/
+
+/*------------------------------Portfolio START------------------------------*/
+.portfolio{
+  padding: 65px 15px 35px;
+  h2, h5 {
+    color: $portfolio-title;
+  }
+  background: $portfolio-bg;
+  color: $portfolio-text;
+
+  .img-section{
+    img{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .btn-panel{
+    .btn-line-def{
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  border-bottom: 6px solid lighten($portfolio-bg, 4);
+}
+/*------------------------------Portfolio END------------------------------*/
+
+/*------------------------------Get a Quote START------------------------------*/
+.get-quote{
+  h2, h5 {
+    color: $get-quote-title;
+  }
+  background: $get-quote-bg;
+  color: $get-quote-text;
+
+  border-bottom: 6px solid lighten($get-quote-bg, 4);
+
+  .get-quote-form{
+    input, textarea{
+      background: $get-quote-input-bg;
+      border-color: $get-quote-input-bg;
+      font-size: 12px;
+      font-family: $secondary-font-regular;
+      @include placeholder {
+        color: $get-quote-input-text;
+      }
+    }
+  }
+  .contact-details{
+    font-size: 12px;
+    line-height: 22px;
+    ul{
+      list-style: none;
+      padding-left: 0;
+      li{
+        .fa{
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+/*------------------------------Get a Quote END------------------------------*/
+
+/*------------------------------footer START------------------------------*/
+.footer{
+  padding: 22px 15px;
+  background: $footer-bg;
+  color: $footer-text;
+  .copy-right{
+    font-size: 12px;
+    align-items: center;
+    @include respond-to(lg-screen){
+      justify-content: space-around;
+    }
+  }
+  .social-links{
+    text-align: right;
+  @include respond-to(lg-screen){
+    text-align: center;
+    margin-top: 20px;
+  }
+    ul{
+      padding: 0;
+      margin: 0;
+      li {
+        font-size: 15px;
+        margin-left: 30px;
+        padding: 7px 9px;
+        border-radius: 30px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        border: 1px solid $footer-text;
+        @include transition(ease-in, 0.4s);
+        &:first-child {
+          margin-left: 0;
+        }
+        &:hover {
+          //background: $social-icon-hover-bg;
+          //color: $social-icon-hover-text;
+          @include rotation(360deg);
+          @include transition(ease-in-out, 0.6s);
+        }
+      }
+    }
+  }
+}
+/*------------------------------footer END------------------------------*/
