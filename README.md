@@ -14,6 +14,10 @@ npm install yarn -g
 ```shell
 yarn install
 ```
+- install gulp
+```shell
+npm install gulp
+```
 - build
 ```shell
 gulp build
