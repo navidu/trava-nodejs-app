@@ -27,4 +27,4 @@ gulp build
 node app.js
 ```
 
-Go to your browser and type localhost:8080
+Go to your browser and type localhost:8080 and watch TRAVA app.
