@@ -4,7 +4,7 @@
 ## How to run
 - Git clone this repo
 ```shell
-git clone https://github.com/navidu/trava-gulp.git
+git clone https://github.com/navidu/trava-nodejs-app.git
 ```
 - install yarn
 ```shell
@@ -13,10 +13,6 @@ npm install yarn -g
 - install dependencies
 ```shell
 yarn install
-```
-- download fontastic files
-```shell
-gulp fontastic
 ```
 - build
 ```shell
