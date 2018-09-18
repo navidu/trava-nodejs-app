@@ -24,5 +24,5 @@ gulp build
 ```
 - run server
 ```shell
-gulp
+node app.js
 ```
